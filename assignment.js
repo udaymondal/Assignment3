@@ -53,3 +53,17 @@ function hotelCost(numberOfDays){
 
 //console.log(hotelCost(43));
 
+// Problem 4:
+
+function megaFriend(friendNames){
+
+    var longName = "";
+    for (var i = 0; i < friendNames.length; i++) {
+        if (longName.length < friendNames[i].length) {
+        longName = friendNames[i];
+        }
+    }
+    return longName;
+}
+
+//console.log(megaFriend(['Ashraf', 'Muktadir Hossian', 'Rafiul']));
