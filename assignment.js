@@ -34,5 +34,22 @@ function budgetCalculator(numberOfWatch, numberOfMobile, numberOfLaptop)
 
 //console.log(budgetCalculator(10, 5, 3));
 
+// Problem 3:
+function hotelCost(numberOfDays){
+    if(numberOfDays>=1 && numberOfDays<=10){
+        return numberOfDays * 100;
+    }
+    else if(numberOfDays>=11 && numberOfDays<=20){
+        return ((numberOfDays-10)*80)+1000;
+    }
+    else if(numberOfDays>=21){
+        return ((numberOfDays-20)*50) + 1000 + 800;
+    }
+    else{
+        return ("Enter valid number of days");
+    }
 
+}
+
+//console.log(hotelCost(43));
 
